@@ -1,21 +1,20 @@
 #analyst 
 
-CREATE TABLE Team (
-    Id INT PRIMARY KEY,
-    Name VARCHAR(255) NOT NULL,
+CREATE TABLE Teamate (
+    Id INT PRIMARY KEY unique,
+    Name VARCHAR(255) unique NOT NULL,
     Nationality VARCHAR(100) NOT NULL,
     Sport VARCHAR(100) NOT NULL,
-    1stTeam VARCHAR(100),
-    1stStart DATE,
-    1stEnd DATE,
-    CurrentlyTeam VARCHAR(100),
-    CurrentlyTeamStart DATE,
-    CurrentlyTeamEnd DATE,
+    firstTeam VARCHAR(100),
+    firstStart DATE,
+    firstEnd DATE,
+    CurrentTeam VARCHAR(100),
+    CurrentTeamStart DATE,
+    CurrentTeamEnd DATE,
     FormerTeam VARCHAR(100),
     FormerTeamStart DATE,
     FormerTeamEnd DATE
 );
-
 CREATE TABLE Work (
     Id INT,
     Name VARCHAR(255) NOT NULL,
@@ -24,7 +23,8 @@ CREATE TABLE Work (
     ProfessionalStart DATE,
     ProfessionalEnd DATE,
     TeamId INT,
-    FOREIGN KEY (TeamId) REFERENCES Team(Id),
+    FOREIGN KEY (Id) REFERENCES Teamate(Id),
+    FOREIGN KEY (Name) REFERENCES Teamate(Name),
     Sponsor VARCHAR(255),
     HighestPaid DECIMAL(10,2),
     LowerPaid DECIMAL(10,2)
@@ -39,5 +39,6 @@ CREATE TABLE Personal (
     Kids INT,
     KidsName VARCHAR(255),
     TeamId INT NOT NULL,
-    FOREIGN KEY (TeamId) REFERENCES Team(Id)
+    FOREIGN KEY (Id) REFERENCES Teamate(Id),
+    FOREIGN KEY (Name) REFERENCES Teamate(Name)
 );
