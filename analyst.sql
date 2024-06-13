@@ -18,12 +18,12 @@ CREATE TABLE Teamate (
 
 INSERT INTO Teamate (Id, Name, Nationality, Sport, firstTeam, firstStart, firstEnd, CurrentTeam, CurrentTeamStart, CurrentTeamEnd, FormerTeam, FormerTeamStart, FormerTeamEnd)
 VALUES 
-    (1, 'Messi', 'Argentina', 'Football', NULL, NULL, NULL, 'Paris Saint-Germain', '2021-08-10', NULL, 'Barcelona', '2004-10-16', '2021-08-05'),
-    (2, 'Cristiano Ronaldo', 'Portugal', 'Football', NULL, NULL, NULL, 'Manchester United', '2021-08-31', NULL, 'Juventus', '2018-07-10', '2021-08-27'),
-    (3, 'Lebron James', 'United States', 'Basketball', NULL, NULL, NULL, 'Los Angeles Lakers', '2018-07-01', NULL, 'Cleveland Cavaliers', '2003-10-29', '2010-07-08'),
-    (4, 'Michael Jordan', 'United States', 'Basketball', NULL, NULL, NULL, NULL, NULL, NULL, 'Chicago Bulls', '1984-10-26', '1993-10-06'),
-    (5, 'Shaq', 'United States', 'Basketball', NULL, NULL, NULL, NULL, NULL, NULL, 'Los Angeles Lakers', '1996-07-18', '2004-07-14'),
-    (6, 'Eden Hazard', 'Belgium', 'Football', NULL, NULL, NULL, 'Real Madrid', '2019-07-01', NULL, 'Chelsea', '2012-07-01', '2019-06-30'),
+    (1, 'Messi', 'Argentina', 'Football', 'Barcelona', '2004-10-16', '2021-08-01', 'Inter Miami', '2023-07-07', NULL, 'Paris Saint-Germain', '2021-08-10', '2023-07-03')
+    (2, 'Cristiano Ronaldo', 'Portugal', 'Football', 'Sporting CP', '2002-08-14', '2003-08-12', 'Al Nassr', '2022-12-30', NULL, 'Manchester United', '2021-08-31', '2022-10-22'),
+    (3, 'Lebron James', 'United States', 'Basketball', 'Cleveland Cavaliers', '2003-10-29', '2010-05-13', 'Los Angeles Lakers', '2018-07-01', NULL, 'Cleveland Cavaliers', '2014-07-25', '2018-05-13'),
+    (4, 'Michael Jordan', 'United States', 'Basketball', 'Chicago Bulls', '1984-10-26', '1993-10-06', NULL, NULL, NULL, 'Chicago Bulls', '2001-08-25', '2003-04-16'),
+    (5, 'Shaq', 'United States', 'Basketball', 'Orlando Magic', '1992-11-6', '1996-07-16', NULL, NULL, NULL, 'Boston Celtics', '2010-08-4', '2011-06-09'),
+    (6, 'Eden Hazard', 'Belgium', 'Football', 'Lille OSC','2007-05-28', '2012-07-04', NULL, NULL, NULL, 'Real Madrid', '2019-07-07', '2023-07-10'),
     (7, 'Luka Doncic', 'Slovenia', 'Basketball', NULL, NULL, NULL, 'Dallas Mavericks', '2018-06-21', NULL, NULL, NULL, NULL),
     (8, 'Neymar Jr', 'Brazil', 'Football', NULL, NULL, NULL, 'Paris Saint-Germain', '2017-08-03', NULL, 'Barcelona', '2013-06-03', '2017-08-02'),
     (9, 'Mbappé', 'France', 'Football', NULL, NULL, NULL, 'Paris Saint-Germain', '2017-07-01', NULL, 'Monaco', '2015-12-20', '2017-06-30'),
