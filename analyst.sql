@@ -58,7 +58,8 @@ CREATE TABLE Work (
     LowerPaid DECIMAL(10,2)
 );
 
-(1, 'Lionel Messi', 'Leo', 'Football', '2003-01-01', NULL, 1, 'Adidas', 1000000.00, 500000.00),
+
+    (1, 'Lionel Messi', 'Leo', 'Football', '2003-01-01', NULL, 1, 'Adidas', 1000000.00, 500000.00),
     (2, 'Cristiano Ronaldo', 'CR7', 'Football', '2002-01-01', NULL, 2, 'Nike', 1500000.00, 600000.00),
     (3, 'LeBron James', 'King James', 'Basketball', '2003-01-01', NULL, 3, 'Nike', 2500000.00, 800000.00),
     (4, 'Michael Jordan', 'MJ', 'Basketball', '1984-01-01', '2003-01-01', 4, 'Nike', 2000000.00, 700000.00),
@@ -92,3 +93,26 @@ CREATE TABLE Personal (
     FOREIGN KEY (Id) REFERENCES Teamate(Id),
     FOREIGN KEY (Name) REFERENCES Teamate(Name)
 );
+
+
+    (1, 'Messi', 'Argentina', 'Married', 'Antonela Roccuzzo', 3, 'Thiago, Mateo, Ciro', 1),
+    (2, 'Cristiano Ronaldo', 'Portugal', 'In a relationship', 'Georgina Rodriguez', 4, 'Cristiano Jr, Eva, Mateo, Alana', 3),
+    (3, 'LeBron James', 'United States', 'Married', 'Savannah James', 3, 'Bronny, Bryce, Zhuri', 4),
+    (4, 'Michael Jordan', 'United States', 'Married', 'Yvette Prieto', 5, 'Jeffrey, Marcus, Jasmine, Victoria, Ysabel', 5),
+    (5, 'Shaquille O''Neal', 'United States', 'Married', 'Shaunie O''Neal', 6, 'Shareef, Amirah, Shaqir, Me''arah, Myles, Taahirah', 6),
+    (6, 'Eden Hazard', 'Belgium', 'Married', 'Natacha Van Honacker', 4, 'Yannis, Leo, Samy, Leo', 7),
+    (7, 'Luka Doncic', 'Slovenia', 'In a relationship', 'Anamaria Goltes', NULL, NULL, 8),
+    (8, 'Neymar Jr', 'Brazil', 'Single', NULL, 1, 'Davi Lucca', 9),
+    (9, 'Kylian Mbappé', 'France', 'Single', NULL, NULL, NULL, 10),
+    (10, 'Lewis Hamilton', 'United Kingdom', 'In a relationship', 'Valtteri Bottas', NULL, NULL, 21),
+    (11, 'Jimmy Butler', 'United States', 'Single', NULL, NULL, NULL, 8),
+    (12, 'Fernando Torres', 'Spain', 'Married', 'Olalla Dominguez', 3, 'Nora, Leo, Elsa', 12),
+    (13, 'James Harden', 'United States', 'In a relationship', 'Arabella Nicole Martín', NULL, NULL, 7),
+    (14, 'Mohamed Salah', 'Egypt', 'Married', 'Makka Mohamed Salah', 1, 'Makka', 12),
+    (15, 'Patrick Mahomes', 'United States', 'Married', 'Brittany Matthews', 1, 'Sterling Skye Mahomes', 13),
+    (16, 'Travis Kelce', 'United States', 'In a relationship', 'Kayla Nicole', NULL, NULL, 13),
+    (17, 'Thiago Silva', 'Brazil', 'Married', 'Isabelle Da Silva', 2, 'Iago, Isago', 18),
+    (18, 'Manuel Neuer', 'Germany', 'Married', 'Nina Weiss', 2, 'Lara, Milan', 14),
+    (19, 'Giannis Antetokounmpo', 'Greece', 'Married', 'Marianthi Antonetokounmpo', 1, 'Liam Charles', 15),
+    (20, 'Max Verstappen', 'Netherlands', 'In a relationship', 'Kelly Piquet', NULL, NULL, 16),
+    (21, 'Charles Leclerc', 'Monaco', 'Single', NULL, NULL, NULL, 17);
