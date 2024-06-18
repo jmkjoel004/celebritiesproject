@@ -58,7 +58,8 @@ CREATE TABLE Work (
     LowerPaid DECIMAL(10,2)
 );
 
-
+INSERT INTO Work (Id, Name, Nickname, Sport, ProfessionalStart, ProfessionalEnd, TeamId, Sponsor, HighestPaid, LowerPaid)
+VALUES
     (1, 'Lionel Messi', 'Leo', 'Football', '2003-01-01', NULL, 1, 'Adidas', 1000000.00, 500000.00),
     (2, 'Cristiano Ronaldo', 'CR7', 'Football', '2002-01-01', NULL, 2, 'Nike', 1500000.00, 600000.00),
     (3, 'LeBron James', 'King James', 'Basketball', '2003-01-01', NULL, 3, 'Nike', 2500000.00, 800000.00),
@@ -94,7 +95,8 @@ CREATE TABLE Personal (
     FOREIGN KEY (Name) REFERENCES Teamate(Name)
 );
 
-
+INSERT INTO Personal (Id, Name, Nationality, RelationshipStatus, Partner, Kids, KidsNames, TeamId)
+VALUES
     (1, 'Messi', 'Argentina', 'Married', 'Antonela Roccuzzo', 3, 'Thiago, Mateo, Ciro', 1),
     (2, 'Cristiano Ronaldo', 'Portugal', 'In a relationship', 'Georgina Rodriguez', 4, 'Cristiano Jr, Eva, Mateo, Alana', 3),
     (3, 'LeBron James', 'United States', 'Married', 'Savannah James', 3, 'Bronny, Bryce, Zhuri', 4),
