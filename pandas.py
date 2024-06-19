@@ -23,3 +23,8 @@ print(football_players)
 mean_highest_paid = df['highestpaid'].mean()
 print(f"Mean highest paid: {mean_highest_paid}")
 
+# Calculate the difference between 'highestpaid' and 'lowerpaid'
+df['difference'] = df['highestpaid'] - df['lowerpaid']
+
+# Display the DataFrame with the new 'difference' column
+print(df[['name', 'highestpaid', 'lowerpaid', 'difference']])
